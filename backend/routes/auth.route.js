@@ -14,9 +14,11 @@ router.post('/logout', logout);
 
 router.post('/login', login);
 
+
 router.post('/refresh-token', refreshToken);
 
 router.post('/getprofile', getProfile);
+
 
 
 export default router;

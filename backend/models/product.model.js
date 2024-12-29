@@ -1,6 +1,10 @@
 import mongoose from 'mongoose';
 
 const productSchema = new mongoose.Schema({
+    productId: {
+        type: String,
+        required: [true, 'Product ID is required'],
+    },
     name: {
         type: String,
         required: [true, 'Name is required'],
@@ -18,7 +22,7 @@ const productSchema = new mongoose.Schema({
         type: Number,
         required: [true, 'Count in stock is required'],
     },
-    imageUrl: {
+    image: {
         type: String,
         required: [true, 'Image URL is required'],
     },
